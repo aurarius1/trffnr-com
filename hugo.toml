@@ -1,0 +1,12 @@
+baseURL = 'https://trffnr.com/'
+languageCode = 'en-us'
+title = 'trffnr.com'
+theme = 'narrow'
+
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 1
+
+
