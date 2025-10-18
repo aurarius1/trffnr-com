@@ -17,28 +17,27 @@ languages:
     languageName: "Deutsch"
     weight: 2
 
-enableEmoji: true 
-
+enableEmoji: true
 
 permalinks:
-  posts: /posts/:year/:month/:day/:slug/  # Post permalink format
-  pages: /:slug/                     # Page permalink format
+  posts: /posts/:year/:month/:day/:slug/ # Post permalink format
+  pages: /:slug/ # Page permalink format
 
 taxonomies:
-  category: categories  # Categories
-  tag: tags           # Tags
+  category: categories # Categories
+  tag: tags # Tags
 
 menu:
   main:
     - name: nav.posts
       url: "/posts/"
       weight: 20
-      params: 
-       icon: posts
+      params:
+        icon: posts
     - name: nav.categories
       pageRef: /categories
       weight: 30
-      params: 
+      params:
         icon: categories
     - name: nav.tags
       pageRef: /tags
@@ -57,7 +56,7 @@ menu:
       weight: 1
       params:
         icon: about
-  social: 
+  social:
     - name: GitHub
       url: https://github.com/aurarius1
       weight: 1
@@ -74,35 +73,35 @@ menu:
       params:
         icon: link
 
-params: 
-  showThemeSwitch: true      
-  showDarkModeSwitch: true   
-  showLanguageSwitch: true   
+params:
+  showThemeSwitch: true
+  showDarkModeSwitch: true
+  showLanguageSwitch: true
   keywords: ["homelab", "3d-printing", "self-hosting", "development", "cs"]
   description: "Personal blog by Lukas. Mostly about CS topics, 3D printing, homelabbing and possibly some DIY projects."
   #language: "en-US"
   defaultAuthor: "Lukas"
 
-  images: 
+  images:
     - "/images/og-default.avif"
 
-  logo: 
+  logo:
     image: "https://avatars.githubusercontent.com/u/56772054?v=4"
     link: "/"
 
-  author: 
+  author:
     name: "Lukas"
     title: "Computer Science student | 3D Printing | HomeLab | DIY? | 🇦🇹"
     description: "This is just a random blog, where I'll post progress about my projects"
     avatar: "https://avatars.githubusercontent.com/u/56772054?v=4"
 
   home:
-    recentPostsCount: 5 
+    recentPostsCount: 5
 
   post:
-    showRelated: true           # show related posts
-    relatedPostsCount: 3        # posts number
-  
+    showRelated: true # show related posts
+    relatedPostsCount: 3 # posts number
+
     license:
       show: true
       author: "Lukas"
@@ -112,7 +111,7 @@ params:
       displayName: "CC BY-NC-SA 4.0"
 
   colorScheme: "default"
-  
+
   # Theme list
   themes:
     default:
@@ -140,31 +139,31 @@ params:
       name: "Dracula"
       order: 8
   analytics:
-   google:
-     enabled: true
-     id: "G-2GN4JPZ2D0"
+    google:
+      enabled: true
+      id: "G-2GN4JPZ2D0"
   comments:
+    enabled: true
     system: "giscus"
     giscus:
       repo: "aurarius1/aurarius1.github.io"
       repo_id: R_kgDOMCWaAA
       category: Comments
       category_id: DIC_kwDOMCWaAM4CjvF1
-      mapping: "pathname"            # Mapping method
-      strict: "0"                    # Strict matching
-      reactionsEnabled: "1"          # Enable reactions
-      emitMetadata: "0"             # Metadata
-      inputPosition: "bottom"        # Input box position
+      mapping: "pathname" # Mapping method
+      strict: "0" # Strict matching
+      reactionsEnabled: "1" # Enable reactions
+      emitMetadata: "0" # Metadata
+      inputPosition: "bottom" # Input box position
       theme: "preferred_color_scheme" # Theme
-      lang: "en"                    # Language
-
+      lang: "en" # Language
 
 markup:
   highlight:
-    codeFences: true           # Enable code fences
-    guessSyntax: true         # Auto-detect language
-    lineNos: true             # Show line numbers
-    lineNumbersInTable: false  # Use table-style line numbers, set to false for theme compatibility
-    noClasses: false          # Use CSS classes instead of inline styles
-    style: "monokai"          # Code highlighting theme (setting here has no effect, details below)
-    tabWidth: 4               # Tab width
+    codeFences: true # Enable code fences
+    guessSyntax: true # Auto-detect language
+    lineNos: true # Show line numbers
+    lineNumbersInTable: false # Use table-style line numbers, set to false for theme compatibility
+    noClasses: false # Use CSS classes instead of inline styles
+    style: "monokai" # Code highlighting theme (setting here has no effect, details below)
+    tabWidth: 4 # Tab width
