@@ -89,6 +89,9 @@ params:
     image: "https://avatars.githubusercontent.com/u/56772054?v=4"
     link: "/"
 
+  favicon:
+    svg: https://avatars.githubusercontent.com/u/56772054?v=4&size=64
+
   author:
     name: "Lukas"
     title: "Computer Science student | 3D Printing | HomeLab | DIY? | 🇦🇹"

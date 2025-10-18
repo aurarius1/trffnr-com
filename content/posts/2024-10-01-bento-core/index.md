@@ -7,7 +7,7 @@ tags:
   - 3d printing
   - air quality
   - esp2866
-cover: "3d-model.png"
+cover: "featured.png"
 ---
 
 This post will be mostly about 3d printing air quality and especially air safety. Before starting I want to mention that I am no professional (far from it to be honest), I'm just a hobbyist focused on making my setup as safe as possible - so read the next lines with caution and do not take this as medical / health advice or anything more than a random blog post on the internet. As my two 3d printers are placed inside my "office" (it's more a hobby room than an office, but let's keep pretending) and I spend a significant amount of time inside this room, I wanted a way to measure air quality in my room.
@@ -28,18 +28,18 @@ But there is one major drawback (at least for me): I have no idea about the stat
 
 As you know from the title, my add on is called "BentoCore" and the idea behind it is simple: the bottom funnel of the BentoBox will be replaced by an adapted funnel with a base piece that allows to house the ESP8266 and the PM2.5 sensor. It should also allow to attach a little breakout case if you wanted to attach the VOC and Temp/Humidity sensor. This is how the final version will look like:
 
-![3D model](3d-model.png)
+![3D model](gallery/3d-model.png)
 
 The biggest problem was of course the constrained space, I didn't want the total height of the tower to be too big, so that's why I constrained myself with around 35mm of max height (the final base is 33mm in height). Additionally the dimensions in in x and y are already set by the BentoBox itself, though with the "breakout" I cheated a little there. Nevertheless, with the PMS5003 taking up nearly half the internal space (see picture below) I was getting a bit worried that this whole project might be doomed.
-![PMS5003](pms5003.png)
+![PMS5003](gallery/pms5003.png)
 
 While it would definitely be possible to solder the ESP8266 and the few headers for the connections on a breadboard manually I decided to learn a new thing here as well: designing a custom PCB (thanks at this point to [Christian](https://hp.p4s3r0.it/) for helping me out with that).
-![Base with PCB](base_with_pcb.png)
+![Base with PCB](gallery/base_with_pcb.png)
 
 As you can see from the picture the PCB fills up the space neatly and while it certainly would have been possible to incorporate the two I²C sensors into this board, I decided to keep them external.
 
 The last thing I want to mention here are the two "outward" facing ports:
-![ports](ports.png)
+![ports](gallery/ports.png)
 
 Both are JST-SM panel mounts and the 4 pin version (above) is used to connect the breakout case with the I²C interface on the PCB. PSA: in my opinion (depending on if you plan to place the breakout box on the duct or not) this 4 pin connector is not needed and even rather complicates the connection of the box - nevertheless I wanted to keep the connector as it is still very much possible to just route the cables through the hole of the connector. The bottom one (2 pin) is used to power the whole thing. To ease the routing of the power cables the BentoCore base contains a cutout on the bottom, to route the cables underneath the base. There will be an update soon that will incorporate small pins that will keep the cables inside this channel, as I noticed - when installing my own - that the cables tend to fall out of the channel (if you already printed it just fix them with a piece of tape).
 
@@ -56,7 +56,7 @@ The remaining connectors are just either 2 pin or 4 pin JST-XH connectors and on
 The microcontroller powering this whole setup should have been an ESP32 at the beginning, though the ESP32s I had on hand were just to big. That's why I settled for an ESP8266. Maybe I'll create a future version of this whole project using an ESP32 as this microcontroller provides hardware PWM support and doesn't need to rely on software as the 8266 does. For now though, I am quite happy with the ESP8266.
 
 The breakout PCB technically doesn't need to be a professionally manufactored PCB either, as it is basically just an I²C distribution plate, as seen in the picture below.
-![breakout pcb](breakout_pcb.png)
+![breakout pcb](gallery/breakout_pcb.png)
 
 Again for this project only two of the three connections are needed, but I plan on reusing this for the Platsa enclosure as well. Additionally there might be a version where a small OLED screen will be included in the breakout box lid, as the connection is there and there is still a little bit power left to use.
 
@@ -72,7 +72,7 @@ That's it, plug in your BentoCore powered BentoBox and you are good to go. If yo
 
 First of all you need ESPHome to be configured in HomeAssistant. After flashing the microcontroller and plugging everything in, HomeAssistant should detect this device, using the name you gave it (if you did not edit the config from Github it should be P1S BentoBox). Navigating to your devices and selecting this device, after a few minutes you should see something like this:
 
-![bentocore device](device.png)
+![bentocore device](gallery/device.png)
 
 While the "Lights" switch and the "PWM Enclosure Fan" can be ignored (or entirely removed from the config - as they are only needed in the Platsa enclosure) the "Fan" control should already control your BentoBox fans, if you wired everything correctly. The sensors should give some readings as well (the VOC and PM sensor take a few minutes to fully boot and report values).
 
@@ -82,7 +82,7 @@ Now you can build your own dashboard around this setup (or incoroporate the Bent
 
 Basically my dashboard follows a simple layout, I first needed a control slider for the fans then I wanted to keep track on when I changed the activated carbon / hepa filter and lastly some indication of the current air "quality" inside the chamber.
 
-![HA card](bentobox_card.png)
+![HA card](gallery/bentobox_card.png)
 
 If you want to create this layout for your dashboard as well here is the configuration to achieve that:
 
