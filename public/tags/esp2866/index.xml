@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Esp2866 on Lukas&#39; Blog</title>
+    <link>http://localhost:1313/tags/esp2866/</link>
+    <description>Recent content in Esp2866 on Lukas&#39; Blog</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 29 Sep 2024 17:00:00 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/esp2866/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BentoCore - Making Your BentoBox Smarter</title>
+      <link>http://localhost:1313/posts/2024/09/29/bentocore-making-your-bentobox-smarter/</link>
+      <pubDate>Sun, 29 Sep 2024 17:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/posts/2024/09/29/bentocore-making-your-bentobox-smarter/</guid>
+      <description>&lt;p&gt;This post will be mostly about 3d printing air quality and especially air safety. Before starting I want to mention that I am no professional (far from it to be honest), I&amp;rsquo;m just a hobbyist focused on making my setup as safe as possible - so read the next lines with caution and do not take this as medical / health advice or anything more than a random blog post on the internet. As my two 3d printers are placed inside my &amp;ldquo;office&amp;rdquo; (it&amp;rsquo;s more a hobby room than an office, but let&amp;rsquo;s keep pretending) and I spend a significant amount of time inside this room, I wanted a way to measure air quality in my room.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

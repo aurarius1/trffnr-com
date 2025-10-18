@@ -1,7 +1,7 @@
 baseURL: "https://trffnr.com/"
 title: "Lukas' Blog"
 theme: "narrow"
-
+metaDataFormat: "yaml"
 languageCode: en-US
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
@@ -95,7 +95,10 @@ params:
     title: "Computer Science student | 3D Printing | HomeLab | DIY? | 🇦🇹"
     description: "This is just a random blog, where I'll post progress about my projects"
     avatar: "https://avatars.githubusercontent.com/u/56772054?v=4"
- 
+
+  home:
+    recentPostsCount: 5 
+
   post:
     showRelated: true           # show related posts
     relatedPostsCount: 3        # posts number

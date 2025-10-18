@@ -3,13 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/tags/3d-printing/</loc>
-    <lastmod>2024-09-12T17:00:00+02:00</lastmod>
+    <lastmod>2024-09-29T17:00:00+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/3d-printing/</loc>
-    <lastmod>2024-09-12T17:00:00+02:00</lastmod>
+    <lastmod>2024-09-29T17:00:00+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/air-quality/</loc>
+    <lastmod>2024-09-29T17:00:00+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2024/09/29/bentocore-making-your-bentobox-smarter/</loc>
+    <lastmod>2024-09-29T17:00:00+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2024-09-12T17:00:00+02:00</lastmod>
+    <lastmod>2024-09-29T17:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-AT"
@@ -21,8 +27,11 @@
                 href="http://localhost:1313/categories/"
                 />
   </url><url>
+    <loc>http://localhost:1313/tags/esp2866/</loc>
+    <lastmod>2024-09-29T17:00:00+02:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-09-12T17:00:00+02:00</lastmod>
+    <lastmod>2024-09-29T17:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-AT"
@@ -35,13 +44,10 @@
                 />
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-09-12T17:00:00+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/2024/09/12/so-i-bought-a-p1s/</loc>
-    <lastmod>2024-09-12T17:00:00+02:00</lastmod>
+    <lastmod>2024-09-29T17:00:00+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-09-12T17:00:00+02:00</lastmod>
+    <lastmod>2024-09-29T17:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de-AT"
@@ -53,9 +59,26 @@
                 href="http://localhost:1313/tags/"
                 />
   </url><url>
+    <loc>http://localhost:1313/categories/diy/</loc>
+    <lastmod>2024-09-28T17:00:00+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2024/09/28/framing-a-phone/</loc>
+    <lastmod>2024-09-28T17:00:00+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/phones/</loc>
+    <lastmod>2024-09-28T17:00:00+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/teardown/</loc>
+    <lastmod>2024-09-28T17:00:00+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2024/09/12/so-i-bought-a-p1s/</loc>
+    <lastmod>2024-09-12T17:00:00+02:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/2023/11/13/hello-world/</loc>
     <lastmod>2023-11-13T09:00:00+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
+  </url><url>
+    <loc>http://localhost:1313/archives/</loc>
   </url>
 </urlset>
