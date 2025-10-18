@@ -146,17 +146,17 @@ params:
     enabled: true
     system: "giscus"
     giscus:
-      repo: "aurarius1/aurarius1.github.io"
-      repo_id: R_kgDOMCWaAA
-      category: Comments
-      category_id: DIC_kwDOMCWaAM4CjvF1
-      mapping: "pathname" # Mapping method
-      strict: "0" # Strict matching
-      reactionsEnabled: "1" # Enable reactions
-      emitMetadata: "0" # Metadata
-      inputPosition: "bottom" # Input box position
-      theme: "preferred_color_scheme" # Theme
-      lang: "en" # Language
+      repo: "aurarius1/trffnr-com"
+      repoId: "R_kgDOQE_TqQ"
+      category: "General"
+      categoryId: "DIC_kwDOQE_Tqc4Cwzob"
+      mapping: "pathname"
+      strict: "0"
+      reactionsEnabled: "1"
+      emitMetadata: "0"
+      inputPosition: "bottom"
+      theme: "gruvbox"
+      lang: "en"
 
 markup:
   highlight:
