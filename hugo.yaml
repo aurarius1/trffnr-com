@@ -1,0 +1,167 @@
+baseURL: "https://trffnr.com/"
+title: "Lukas' Blog"
+theme: "narrow"
+
+languageCode: en-US
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+
+# Language configuration - language switch button reads supported languages from here
+languages:
+  en:
+    languageCode: en-US
+    languageName: "English"
+    weight: 1
+  de:
+    languageCode: de-AT
+    languageName: "Deutsch"
+    weight: 2
+
+enableEmoji: true 
+
+
+permalinks:
+  posts: /posts/:year/:month/:day/:slug/  # Post permalink format
+  pages: /:slug/                     # Page permalink format
+
+taxonomies:
+  category: categories  # Categories
+  tag: tags           # Tags
+
+menu:
+  main:
+    - name: nav.posts
+      url: "/posts/"
+      weight: 20
+      params: 
+       icon: posts
+    - name: nav.categories
+      pageRef: /categories
+      weight: 30
+      params: 
+        icon: categories
+    - name: nav.tags
+      pageRef: /tags
+      weight: 40
+      params:
+        icon: tags
+
+    - name: nav.archives
+      pageRef: /archives
+      weight: 50
+      params:
+        icon: archive
+  footer:
+    - name: About
+      pageRef: /about
+      weight: 1
+      params:
+        icon: about
+  social: 
+    - name: GitHub
+      url: https://github.com/aurarius1
+      weight: 1
+      params:
+        icon: github
+    - name: MakerWorld
+      url: https://makerworld.com/en/@aurarius
+      weight: 2
+      params:
+        icon: link
+    - name: Printables
+      url: https://www.printables.com/@aurarius
+      weight: 3
+      params:
+        icon: link
+
+params: 
+  showThemeSwitch: true      
+  showDarkModeSwitch: true   
+  showLanguageSwitch: true   
+  keywords: ["homelab", "3d-printing", "self-hosting", "development", "cs"]
+  description: "Personal blog by Lukas. Mostly about CS topics, 3D printing, homelabbing and possibly some DIY projects."
+  #language: "en-US"
+  defaultAuthor: "Lukas"
+
+  images: 
+    - "/images/og-default.avif"
+
+  logo: 
+    image: "https://avatars.githubusercontent.com/u/56772054?v=4"
+    link: "/"
+
+  author: 
+    name: "Lukas"
+    title: "Computer Science student | 3D Printing | HomeLab | DIY? | 🇦🇹"
+    description: "This is just a random blog, where I'll post progress about my projects"
+    avatar: "https://avatars.githubusercontent.com/u/56772054?v=4"
+ 
+  post:
+    showRelated: true           # show related posts
+    relatedPostsCount: 3        # posts number
+  
+    license:
+      show: true
+      author: "Lukas"
+      name: "CC BY-NC-SA 4.0"
+      description: "This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. Please attribute the source, use non-commercially, and maintain the same license."
+      url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      displayName: "CC BY-NC-SA 4.0"
+
+  colorScheme: "default"
+  
+  # Theme list
+  themes:
+    default:
+      name: "Default"
+      order: 1
+    claude:
+      name: "Claude"
+      order: 2
+    bumblebee:
+      name: "Bumblebee"
+      order: 3
+    emerald:
+      name: "Emerald"
+      order: 4
+    nord:
+      name: "Nord"
+      order: 5
+    sunset:
+      name: "Sunset"
+      order: 6
+    abyss:
+      name: "Abyss"
+      order: 7
+    dracula:
+      name: "Dracula"
+      order: 8
+  analytics:
+   google:
+     enabled: true
+     id: "G-2GN4JPZ2D0"
+  comments:
+    system: "giscus"
+    giscus:
+      repo: "aurarius1/aurarius1.github.io"
+      repo_id: R_kgDOMCWaAA
+      category: Comments
+      category_id: DIC_kwDOMCWaAM4CjvF1
+      mapping: "pathname"            # Mapping method
+      strict: "0"                    # Strict matching
+      reactionsEnabled: "1"          # Enable reactions
+      emitMetadata: "0"             # Metadata
+      inputPosition: "bottom"        # Input box position
+      theme: "preferred_color_scheme" # Theme
+      lang: "en"                    # Language
+
+
+markup:
+  highlight:
+    codeFences: true           # Enable code fences
+    guessSyntax: true         # Auto-detect language
+    lineNos: true             # Show line numbers
+    lineNumbersInTable: false  # Use table-style line numbers, set to false for theme compatibility
+    noClasses: false          # Use CSS classes instead of inline styles
+    style: "monokai"          # Code highlighting theme (setting here has no effect, details below)
+    tabWidth: 4               # Tab width

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Lukas&#39; Blog</title>
+    <link>http://localhost:1313/de/posts/</link>
+    <description>Recent content in Posts on Lukas&#39; Blog</description>
+    <generator>Hugo</generator>
+    <language>de-DE</language>
+    <lastBuildDate>Mon, 13 Nov 2023 09:00:00 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/de/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World</title>
+      <link>http://localhost:1313/de/posts/2023/11/hello-world/</link>
+      <pubDate>Mon, 13 Nov 2023 09:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/de/posts/2023/11/hello-world/</guid>
+      <description>&lt;p&gt;das is jetzt deutsch ;)&lt;/p&gt;&#xA;&lt;h1 id=&#34;who-am-i&#34;&gt;Who am I&lt;/h1&gt;&#xA;&lt;p&gt;Hi, my name is Lukas, 24 years old and at the time of writing I am a CS masters student. I want to start this blog to share my enthusiuasm for various diy projects (though most of them probably will evolve around 3d printing or homelabing).&#xA;Maybe once or twice there will also be a little coding (maybe microcontroller based stuff, though I am not very expierenced with that). Mostly I see this as an opportunity to learn myself and share what I do for fun.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
