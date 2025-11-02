@@ -98,6 +98,14 @@ params:
     description: "This is just a random blog, where I'll post progress about my projects"
     avatar: "https://avatars.githubusercontent.com/u/56772054?v=4"
 
+  analytics:
+    enabled: true
+    umami:
+      enabled: true
+      id: "07d59c96-db23-4c36-8cff-124bd484cac7"
+      src: "https://cloud.umami.is/script.js" # Umami script URL
+      domains: "blog.trffnr.com" # Domains to track
+
   home:
     recentPostsCount: 5
 
@@ -141,12 +149,7 @@ params:
     dracula:
       name: "Dracula"
       order: 8
-  analytics:
-    umami:
-      enabled: true
-      id: "07d59c96-db23-4c36-8cff-124bd484cac7"
-      src: "https://umami.com/myscript.js" # Umami script URL
-      domains: "blog.trffnr.com" # Domains to track
+
   comments:
     enabled: true
     system: "giscus"
