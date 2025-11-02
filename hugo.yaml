@@ -1,4 +1,4 @@
-baseURL: "https://trffnr.com/"
+baseURL: "https://blog.trffnr.com/"
 title: "Lukas' Blog"
 theme: "narrow"
 metaDataFormat: "yaml"
@@ -142,9 +142,13 @@ params:
       name: "Dracula"
       order: 8
   analytics:
-    google:
-      enabled: true
-      id: "G-2GN4JPZ2D0"
+    params:
+      analytics:
+        umami:
+          enabled: true
+          id: "07d59c96-db23-4c36-8cff-124bd484cac7"
+          src: "https://umami.com/myscript.js" # Umami script URL
+          domains: "blog.trffnr.com" # Domains to track
   comments:
     enabled: true
     system: "giscus"
